@@ -1,5 +1,5 @@
 {
-  "name": "topic1",
+  "name": "yd-task-topic1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,6 +16,6 @@
   "scripts": {
     "build": "babel src -d dist"
   },
-  "author": "",
+  "author": "guoxuedong",
   "license": "ISC"
 }

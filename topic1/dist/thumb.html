@@ -16,19 +16,20 @@
     <div class="box"></div>
 
     <div class="praise-thumb-wrap">
-        
+
     </div>
     <script>
-         SystemJS.config({
-            baseURL:'./',
-            transpiler:'plugin-babel',
-            map:{
-                'plugin-babel':'node_modules/systemjs-plugin-babel/plugin-babel.js',
-                'systemjs-babel-build':'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
+        SystemJS.config({
+            baseURL: './',
+            transpiler: 'plugin-babel',
+            map: {
+                'plugin-babel': 'node_modules/systemjs-plugin-babel/plugin-babel.js',
+                'systemjs-babel-build': 'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
             }
         });
-        SystemJS.import('thumb.js').then(function(m){
+        SystemJS.import('components/thumb.js').then(function (m) {
             var thumb = new m.Thumb();
+            thumb.init();
             window.thumb = thumb;
         })
     </script>
