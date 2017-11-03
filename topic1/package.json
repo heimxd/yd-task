@@ -1,0 +1,21 @@
+{
+  "name": "topic1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-babel": "^0.0.25"
+  },
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "author": "",
+  "license": "ISC"
+}
