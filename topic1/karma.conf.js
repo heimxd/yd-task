@@ -1,7 +1,8 @@
 // Karma configuration
 // Generated on Fri Nov 03 2017 17:32:31 GMT+0800 (CST)
+var path = require('path');
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -16,7 +17,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './src/utils/index.js',
-      './test/utils.spec.js'
+      './dist/utils/utils.spec.js'
     ],
 
 
@@ -28,8 +29,31 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      './src/utils/index.js': ['webpack', 'babel'],
+      './test/utils.spec.js': ['webpack', 'babel']
     },
-
+    webpack: {
+      module: {
+        rules: [
+          // instrument only testing sources with Istanbul 
+          {
+            test: /\.js$/,
+            use: {
+              loader: 'istanbul-instrumenter-loader',
+              options: { esModules: true }
+            },
+            // enforce: 'post',
+            include: path.resolve('./src')
+          }
+        ]
+      }
+    },
+    babelPreprocessor: {
+      options: {
+        babelrc: false,
+        presets: ['es2015', 'stage-0'],
+      }
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

@@ -8,10 +8,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _index = require('../utils/index.js');
 
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PraiseButton = function () {
@@ -26,7 +22,7 @@ var PraiseButton = function () {
     _createClass(PraiseButton, [{
         key: 'add',
         value: function add() {
-            return _index2.default.add(this.count);
+            this.count = (0, _index.add)(this.count);
         }
     }]);
 

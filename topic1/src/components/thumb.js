@@ -28,6 +28,11 @@ class Thumb extends PraiseButton {
         }
     }
 
+    add() {
+        super.add();
+    }
+
+
     animation() {
         let element = document.querySelector('.praise-thumb');
         if (element) {
@@ -42,8 +47,10 @@ class Thumb extends PraiseButton {
         let element = document.querySelector('.praise-thumb');
         if (element) {
             element.addEventListener('click', () => {
+                console.log(`点了一下`);
                 if (!this.playing) {
-                    super.add();
+                    console.log(`赞了${this.count}次`);
+                    this.add();
                     this.animation();
                     this.playing = true;
                     setTimeout(() => {

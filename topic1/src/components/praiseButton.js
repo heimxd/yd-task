@@ -1,4 +1,4 @@
-import utils from '../utils/index.js';
+import { add } from '../utils/index.js';
 
 class PraiseButton {
     constructor(count = 0) {
@@ -6,7 +6,7 @@ class PraiseButton {
     }
 
     add() {
-        return utils.add(this.count);
+        this.count = add(this.count);
     }
 }
 

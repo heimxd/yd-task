@@ -24,10 +24,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Thumb = function (_PraiseButton) {
     _inherits(Thumb, _PraiseButton);
 
-    function Thumb() {
+    function Thumb(count) {
         _classCallCheck(this, Thumb);
 
-        var _this = _possibleConstructorReturn(this, (Thumb.__proto__ || Object.getPrototypeOf(Thumb)).call(this));
+        var _this = _possibleConstructorReturn(this, (Thumb.__proto__ || Object.getPrototypeOf(Thumb)).call(this, count));
 
         _this.playing = false;
         return _this;
@@ -49,6 +49,11 @@ var Thumb = function (_PraiseButton) {
             }
         }
     }, {
+        key: 'add',
+        value: function add() {
+            _get(Thumb.prototype.__proto__ || Object.getPrototypeOf(Thumb.prototype), 'add', this).call(this);
+        }
+    }, {
         key: 'animation',
         value: function animation() {
             var element = document.querySelector('.praise-thumb');
@@ -67,8 +72,10 @@ var Thumb = function (_PraiseButton) {
             var element = document.querySelector('.praise-thumb');
             if (element) {
                 element.addEventListener('click', function () {
+                    console.log('\u70B9\u4E86\u4E00\u4E0B');
                     if (!_this2.playing) {
-                        _get(Thumb.prototype.__proto__ || Object.getPrototypeOf(Thumb.prototype), 'add', _this2).call(_this2);
+                        console.log('\u8D5E\u4E86' + _this2.count + '\u6B21');
+                        _this2.add();
                         _this2.animation();
                         _this2.playing = true;
                         setTimeout(function () {
