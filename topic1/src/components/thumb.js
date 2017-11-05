@@ -4,6 +4,7 @@ class Thumb extends PraiseButton {
     constructor(count) {
         super(count);
         this.playing = false;
+        this.thumbCount = 0;
     }
 
     init() {
@@ -18,10 +19,10 @@ class Thumb extends PraiseButton {
                 `<div class="praise-thumb">
                     <div class="sw"></div>
                     <div class="finger1"></div>
-                    <div class="finger2"></div>
-                    <div class="finger3"></div>
-                    <div class="finger4"></div>
-                    <div class="finger5"></div>
+                    <div class="finger"></div>
+                    <div class="finger"></div>
+                    <div class="finger"></div>
+                    <div class="finger"></div>
                 </div>`
             )
             thumbWrap.innerHTML = thumbChildren;
@@ -49,10 +50,18 @@ class Thumb extends PraiseButton {
             element.addEventListener('click', () => {
                 console.log(`点了一下`);
                 if (!this.playing) {
-                    console.log(`赞了${this.count}次`);
                     this.add();
+                    console.log(`赞了${this.count}次`);                    
                     this.animation();
                     this.playing = true;
+                    this.thumbCount++;
+                    if (this.thumbCount % 10 === 0) {
+                        this.thumbCount = 0;
+                        element.classList.add('grey');
+                    } else {
+                        element.classList.remove('grey');
+                    }
+
                     setTimeout(() => {
                         this.playing = false;
                     }, 1500);

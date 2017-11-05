@@ -30,6 +30,7 @@ var Thumb = function (_PraiseButton) {
         var _this = _possibleConstructorReturn(this, (Thumb.__proto__ || Object.getPrototypeOf(Thumb)).call(this, count));
 
         _this.playing = false;
+        _this.thumbCount = 0;
         return _this;
     }
 
@@ -44,7 +45,7 @@ var Thumb = function (_PraiseButton) {
         value: function render() {
             var thumbWrap = document.querySelector('.praise-thumb-wrap');
             if (thumbWrap) {
-                var thumbChildren = '<div class="praise-thumb">\n                    <div class="sw"></div>\n                    <div class="finger1"></div>\n                    <div class="finger2"></div>\n                    <div class="finger3"></div>\n                    <div class="finger4"></div>\n                    <div class="finger5"></div>\n                </div>';
+                var thumbChildren = '<div class="praise-thumb">\n                    <div class="sw"></div>\n                    <div class="finger1"></div>\n                    <div class="finger"></div>\n                    <div class="finger"></div>\n                    <div class="finger"></div>\n                    <div class="finger"></div>\n                </div>';
                 thumbWrap.innerHTML = thumbChildren;
             }
         }
@@ -74,10 +75,18 @@ var Thumb = function (_PraiseButton) {
                 element.addEventListener('click', function () {
                     console.log('\u70B9\u4E86\u4E00\u4E0B');
                     if (!_this2.playing) {
-                        console.log('\u8D5E\u4E86' + _this2.count + '\u6B21');
                         _this2.add();
+                        console.log('\u8D5E\u4E86' + _this2.count + '\u6B21');
                         _this2.animation();
                         _this2.playing = true;
+                        _this2.thumbCount++;
+                        if (_this2.thumbCount % 10 === 0) {
+                            _this2.thumbCount = 0;
+                            element.classList.add('grey');
+                        } else {
+                            element.classList.remove('grey');
+                        }
+
                         setTimeout(function () {
                             _this2.playing = false;
                         }, 1500);
