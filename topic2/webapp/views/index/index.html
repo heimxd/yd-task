@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点赞</title>
+    <link rel="stylesheet" href="/css/thumb.css">
+    <script src="https://cdn.bootcss.com/systemjs/0.20.19/system.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="praise-thumb-wrap">
+
+    </div>
+    <script>
+        SystemJS.config({
+            baseURL: '/js',
+            
+        });
+        SystemJS.import('thumb.js').then(function (m) {
+            var thumb = new m.Thumb();
+            thumb.init();
+            window.thumb = thumb;
+        })
+    </script>
+</body>
+
+</html>

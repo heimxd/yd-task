@@ -1,0 +1,143 @@
+[2017-11-20T15:51:12.245] [ERROR] error - ReferenceError: a is not defined
+    at _.get (/Users/guoxuedong/project/yd-task/topic2/webapp/controllers/init.js:12:37)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+[2017-11-20T15:55:40.219] [ERROR] error - ReferenceError: a is not defined
+    at _.get (/Users/guoxuedong/project/yd-task/topic2/webapp/controllers/init.js:12:37)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+[2017-11-20T15:55:43.167] [WARN] error - GET "/asd" 404
+[2017-11-20T15:57:58.056] [WARN] error - GET "/asd" 404
+[2017-11-20T15:58:01.282] [ERROR] error - ReferenceError: a is not defined
+    at _.get (/Users/guoxuedong/project/yd-task/topic2/webapp/controllers/init.js:12:37)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+[2017-11-20T16:07:02.364] [ERROR] error - { Error: ENOENT: no such file or directory, open '/Users/guoxuedong/project/yd-task/topic2/webapp/views/index.html'
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/guoxuedong/project/yd-task/topic2/webapp/views/index.html' }
+[2017-11-20T17:10:25.837] [WARN] error - GET "/index/thumb.css" 404
+[2017-11-20T17:24:20.913] [WARN] error - GET "/index/thumb.css" 404
+[2017-11-20T17:31:53.457] [WARN] error - GET "/node_modules/systemjs/dist/system.js" 404
+[2017-11-20T17:34:16.552] [WARN] error - GET "/node_modules/systemjs/dist/system.js" 404
+[2017-11-21T00:57:13.498] [WARN] error - GET "/node_modules/systemjs/dist/system.js" 404
+[2017-11-21T01:08:12.917] [WARN] error - GET "/utils/index.js" 404
+[2017-11-21T01:43:11.866] [ERROR] error - ReferenceError: rp is not defined
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:9:9
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+[2017-11-21T01:43:57.320] [ERROR] error - ReferenceError: rp is not defined
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:9:9
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+[2017-11-21T01:45:42.560] [ERROR] error - ReferenceError: rp is not defined
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:9:20
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+[2017-11-21T01:46:14.402] [ERROR] error - ReferenceError: rp is not defined
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:10:20
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+[2017-11-21T01:49:18.362] [ERROR] error - ReferenceError: rp is not defined
+    at ctx.body.Promise (/Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:12:13)
+    at new Promise (<anonymous>)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/controllers/index.js:11:26
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:20:19)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at app.use (/Users/guoxuedong/project/yd-task/topic2/webapp/middleware/error.js:9:23)
+    at dispatch (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/topic2/webapp/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
