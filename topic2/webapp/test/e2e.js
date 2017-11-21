@@ -1,10 +1,10 @@
-const {Builder, By, Key, until} = require('selenium-webdriver');
+const { Builder, By, Key, until } = require('selenium-webdriver');
 
 let driver = new Builder()
     .forBrowser('firefox')
     .build();
 
-driver.get('https://www.buidu.com/');
-driver.findElement(By.name('wd')).sendKeys('webdriver', Key.RETURN);
-driver.wait(until.titleIs('webdriver - Google Search'), 1000);
-// driver.quit();
+driver.get('http://localhost:3000/index/index');
+var button = driver.wait(until.elementLocated(By.className('praise-thumb')), 5000);
+button.click();
+driver.quit();
