@@ -1,0 +1,17 @@
+[2017-11-24T17:25:36.424] [ERROR] cheese - ReferenceError: a is not defined
+    at _.get (/Users/guoxuedong/project/yd-task/final/src/controllers/index.js:11:29)
+    at dispatch (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:186:18)
+    at Router._lookup (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:198:12)
+    at /Users/guoxuedong/project/yd-task/final/node_modules/_koa-simple-router@0.2.0@koa-simple-router/index.js:138:21
+    at dispatch (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at logger (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-logger@3.1.0@koa-logger/index.js:46:13)
+    at dispatch (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at next (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:43:18)
+    at error (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-error@3.1.0@koa-error/index.js:45:13)
+    at dispatch (/Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:42:32)
+    at /Users/guoxuedong/project/yd-task/final/node_modules/_koa-compose@4.0.0@koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/guoxuedong/project/yd-task/final/node_modules/_koa@2.4.1@koa/lib/application.js:150:12)
+    at Server.handleRequest (/Users/guoxuedong/project/yd-task/final/node_modules/_koa@2.4.1@koa/lib/application.js:132:19)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
