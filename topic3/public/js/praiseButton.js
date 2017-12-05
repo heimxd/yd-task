@@ -1,4 +1,4 @@
-import { add } from '../utils/index.js';
+import { add } from '../../utils/index.js';
 
 class PraiseButton {
     constructor(count = 0) {

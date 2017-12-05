@@ -1,4 +1,5 @@
 import PraiseButton from './praiseButton.js';
+import '../css/thumb.css';
 
 class Thumb extends PraiseButton {
     constructor(count) {
@@ -8,7 +9,7 @@ class Thumb extends PraiseButton {
     }
 
     init() {
-        this.render();
+        // this.render();
         this.bind();
     }
 

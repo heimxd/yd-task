@@ -1,3 +1,6 @@
+import { Thumb } from './thumb.js'
+import xtag from 'x-tag';
+
 xtag.register('x-thumb', {
     content: `<div class="praise-thumb-wrap">
                 <div class="praise-thumb">
@@ -10,7 +13,10 @@ xtag.register('x-thumb', {
                 </div>
             </div>`,
     lifecycle: {
-        created: function () { },
+        created: function () {
+            let thumb = new Thumb();
+            thumb.init();
+        },
         inserted: function () { },
         removed: function () { },
         attributeChanged: function () { }
