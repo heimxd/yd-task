@@ -50,3 +50,8 @@
   code: 'ENOENT',
   syscall: 'open',
   path: '/Users/guoxuedong/project/yd-task/topic3/build/views/thumb.html' }
+[2017-12-06T02:08:38.060] [WARN] error - GET "/index/thumb.html" 404
+[2017-12-06T03:27:49.304] [WARN] error - GET "/css/thumb.css" 404
+[2017-12-06T03:27:49.305] [WARN] error - GET "/js/thumb.js" 404
+[2017-12-06T03:27:49.966] [WARN] error - GET "/css/thumb.css" 404
+[2017-12-06T03:27:49.967] [WARN] error - GET "/js/thumb.js" 404

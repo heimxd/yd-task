@@ -4,12 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build:dev": "better-npm-run build:dev",
+    "build:prod": "better-npm-run build:prod"
+  },
+  "betterScripts": {
+    "build:dev": {
+      "command": "webpack --progress --colors --watch --config webpack.config.dev.js ",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "build:prod": {
+      "command": "webpack --progress --colors --config webpack.config.prod.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.2.1",
     "koa": "^2.4.1",
     "koa-logger": "^3.1.0",
     "koa-simple-router": "^0.2.0",
@@ -21,12 +36,21 @@
     "x-tag": "^1.5.11"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "better-npm-run": "^0.1.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "html-webpack-plugin": "^2.30.1",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
     "selenium-webdriver": "^3.6.0",
     "style-loader": "^0.19.0",
-    "webpack": "^3.9.1"
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5",
+    "webpack-livereload-plugin": "^1.0.0"
   }
 }

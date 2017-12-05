@@ -6,12 +6,18 @@ module.exports = {
     entry: {
         thumb: __dirname + '/public/js/x-thumb.js'
     },
-    output: {
-        filename: '[name]-[hash:5].js',
-        path: __dirname + '/build'
-    },
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']
+                    }
+                }
+            },
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
@@ -24,7 +30,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'views/layout.html',
-            template: __dirname + '/views/layout.html'
+            template: __dirname + '/views/layout.html',
+            inject: false
         }),
         new HtmlWebpackPlugin({
             filename: 'views/404.html',
@@ -36,10 +43,9 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'views/index/thumb.html',
-            template: __dirname + '/views/index/index.html'
-        }),
-        new ExtractTextPlugin({
-            filename: 'css/[name]-[hash:5].css'
-        }),
+            template: __dirname + '/views/index/index.js',
+            inject: false,
+            chunks: ['commons', 'thumb']
+        })
     ]
 }

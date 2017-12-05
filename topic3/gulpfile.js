@@ -1,7 +1,18 @@
-const gulp  = require('gulp');
+const gulp = require('gulp');
+const babel = require('gulp-babel');
 
-gulp.task('default',function(){
-    console.log(123);
+gulp.task('default', ['babel', 'watch']);
+
+gulp.task('babel', () => {
+    gulp.src(__dirname + '/app.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest(__dirname + '/build'))
+});
+
+gulp.task('watch', () => {
+    gulp.watch(__dirname + '/app.js', ['babel']);
 });
 
 /* 
