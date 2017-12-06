@@ -23,6 +23,11 @@ config.plugins = config.plugins.concat([
 	new LiveReloadPlugin({
 		appendScriptTag: true
 	}),
+	new webpack.optimize.CommonsChunkPlugin({
+        name: "commons",
+        filename: "js/commons.js",
+        minChunks: 3
+    }),
 	new webpack.DefinePlugin({
 		"process.env": {
 			"NODE_ENV": "\"development\""

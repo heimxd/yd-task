@@ -63,6 +63,14 @@ class Thumb extends PraiseButton {
                         element.classList.remove('grey');
                     }
 
+                    axios.get('/index/update')
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
                     setTimeout(() => {
                         this.playing = false;
                     }, 1500);
