@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv='x-dns-prefetch-control' content='on'>
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel='dns-prefetch' href='cdn.bootcss.com'>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+    <script src="http://cdn.bootcss.com/lazyload/2.0.3/lazyload-min.js"></script>
+    <script src="http://cdn.bootcss.com/localforage/1.5.0/localforage.js"></script> {% block head %}{% endblock %}
+</head>
+
+<body>
+    <a href="/index/star">跳星星</a>
+    <a href="/index/index">跳大拇指</a>
+    <div id="pjax-container">
+        {% block content %}{% endblock %}
+    </div>
+    <script>
+        $(document).pjax('a', '#pjax-container');
+        localforage.getItem('adv', function (err, value) {
+            console.log(value);
+            if (value == null) {
+                //1.发请求2。存
+                $.ajax({
+                    url: '/index/adv',
+                    success: function (data) {
+                        localforage.setItem('adv', data);
+                        $("body").append(data);
+                    }
+                });
+            } else {
+                $("body").append(value)
+            }
+
+        });
+    </script>
+</body>
+
+</html>

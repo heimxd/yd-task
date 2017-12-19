@@ -1,0 +1,111 @@
+:root{
+    --grey:#ccc;
+    --thumb:rgb(255, 200, 165);
+}
+
+
+.praise-thumb-wrap {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(170, 200, 170);
+    margin: 100px;
+    padding-top: 100px;
+    padding-left: 200px;
+    overflow: hidden;
+}
+
+.praise-thumb {
+    width: 120px;
+    height: 206px;
+    background-color: var(--thumb);
+    border-top: 2px solid rgb(206, 164, 124);
+    border-bottom: 2px solid rgb(206, 164, 124);
+    border-left: 2px solid rgb(206, 164, 124);
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.sw {
+    height: 140px;
+    position: absolute;
+    width: 130px;
+    background-color: var(--thumb);    
+    left: -120px;
+    top: 35px;
+    border-top: 2px solid rgb(206, 164, 124);
+}
+
+.finger1 {
+    height: 120px;
+    background-color: var(--thumb);        
+    width: 50px;
+    border-radius: 25px;
+    transform: rotate(30deg);
+    transform-origin: left bottom;
+    border: 2px solid rgb(206, 164, 124);
+    border-bottom: none;
+    position: absolute;
+    top: -120px;
+
+}
+
+.finger{
+    height: 50px;
+    width: 60px;
+    position: relative;
+    left: 120px;
+    top: -2px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(255, 200, 165);
+    border-top: 2px solid rgb(206, 164, 124);
+    border-right: 2px solid rgb(206, 164, 124);
+}
+
+.finger:last-child {
+    border-bottom: 2px solid rgb(206, 164, 124);
+}
+
+.praise-thumb::after{
+    content: '+1';
+    display:block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    border-radius: 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;   
+    opacity: 0;
+}
+.praise-thumb.animation::after{
+    animation: praise 5s;
+}
+
+.praise-thumb.grey,.praise-thumb.grey .sw,.praise-thumb.grey .finger,.praise-thumb.grey .finger1{
+    background-color: var(--grey);    
+}
+@keyframes praise{
+    0%{
+        top: 50%;
+        right: -120px;
+        opacity: 0;    
+    }
+    
+    100%{
+        top: -100%;   
+        right: -180px; 
+        opacity: 1;
+    }
+}
+
+.star-wrap{
+    width: 100px;
+    height: 100px;
+    background-color: #ff4400;
+}
