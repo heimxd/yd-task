@@ -1,0 +1,30 @@
+body{
+	background: url('../img/bg.jpg')
+}
+
+.container{
+	margin: 0 auto;
+	width: 8.0625rem;
+	perspective: 25rem;
+}
+
+.box{
+	transform-style: preserve-3d;
+	height: 100%;
+	perspective-origin: 50% 50%;
+}
+
+.box  div{
+	position: absolute;
+	width: 8.0625rem;
+	height: 73.125rem;
+	
+}
+
+.music{
+    text-align: right; 
+    position: absolute; 
+    right: 1rem;
+    z-index: 999;
+    color:rgba(255, 255, 255, 0.8);
+}
