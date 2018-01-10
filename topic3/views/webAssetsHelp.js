@@ -4,9 +4,8 @@
  *@Date 2016-05-05
  */
 module.exports = function(templateParams, cssList) {
-     console.log('入口文件', templateParams.htmlWebpackPlugin.files);
     var _files = templateParams.htmlWebpackPlugin.files;
-     console.log('文件', _files);
+    console.log('+++++++++++++',_files);    
     var _regChunk = templateParams.htmlWebpackPlugin.options.chunks;
     var _regCss = cssList;
     var _scripts = "";
