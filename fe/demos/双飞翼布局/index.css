@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.container {
+  overflow: hidden;
+}
+.center {
+  float: left;
+  width: 100%;
+}
+.center-inner {
+  background: goldenrod;
+  margin-left: 200px;
+  margin-right: 100px;
+  padding-bottom: 999px;
+  margin-bottom: -999px;
+}
+.left {
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-left: -100%;
+  background: sandybrown;
+  padding-bottom: 999px;
+  margin-bottom: -999px;
+}
+.right {
+  width: 100px;
+  height: 200px;
+  float: left;
+  background: aqua;
+  margin-left: -100px;
+  padding-bottom: 999px;
+  margin-bottom: -999px;
+}
