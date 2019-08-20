@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    book
-    {{msg}}
-</body>
-</html>
+{% extends '../component/layout.swig' %}
+{% block title %} 图书管理 {% endblock %}
+{% block content %}
+    <div>
+            <h1>hello swig</h1>
+     <div>
+{% endblock %}
