@@ -2,6 +2,7 @@ const Koa = require('koa');
 const co = require('co');
 const render = require('koa-swig');
 const serve = require('koa-static');
+const KoaBody = require('koa-body');
 const router = require('./router');
 const config = require('../config');
 const errorMiddleware = require('./middleware/error');
@@ -17,8 +18,9 @@ app.context.render = co.wrap(
     writeBody: false,
   }),
 );
-app.use(serve(__dirname+'/public'))
+app.use(KoaBody());
+app.use(serve(__dirname + '/public'));
 app.use(errorMiddleware);
-app.use(router.routes()).use(router.allowedMethods());
+app.use(router.routes()).use(router.allowedMethods(['get', 'post', 'options']));
 app.listen(3000);
 console.log('listening on port 3000');

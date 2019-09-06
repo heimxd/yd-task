@@ -11,6 +11,9 @@ router.get('/', async ctx => {
 });
 router.get('/home', homeController.index);
 router.get('/book', bookController.index);
+router.post('/book/create', bookController.create);
+router.post('/book/delete', bookController.delete);
+router.post('/book/update', bookController.update);
 
 router.get('/error', async ctx => {
   //渲染失败
